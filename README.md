@@ -3,8 +3,15 @@
 </p>
 
 <h3><p align="center">PyTorch Padawan</p></h3>
-
 The grand goal of this repository is to offer an in-depth understanding of **PyTorch for scientific computing**. In particular, we will focus mainly on solving problems while explaining the steps involved which will then offer good intuitions for working with tensors.
 
 --------
 
+
+
+| Topic                     | Description | Notebook  Renderer                                           |
+| ------------------------- | ----------- | ------------------------------------------------------------ |
+| ***einsum***              |             | <a href="https://nbviewer.jupyter.org/github/kmario23/PyTorch-Padawan/blob/master/pytorch-einsum.ipynb"><img src="https://github.com/kmario23/PyTorch-Padawan/blob/master/pixels/jupyter-logo-orangebody-greayplanets.svg"></a> |
+| ***tensor manipulation*** |             | <a href="https://nbviewer.jupyter.org/github/kmario23/PyTorch-Padawan/blob/master/processing-tensors.ipynb"><img src="https://github.com/kmario23/PyTorch-Padawan/blob/master/pixels/jupyter-logo-orangebody-greayplanets.svg"></a> |
+| ***vectorization***       |             | <a href="https://nbviewer.jupyter.org/github/kmario23/PyTorch-Padawan/blob/master/vectorization.ipynb"><img src="https://github.com/kmario23/PyTorch-Padawan/blob/master/pixels/jupyter-logo-orangebody-greayplanets.svg"></a> |
+|                           |             |                                                              |
