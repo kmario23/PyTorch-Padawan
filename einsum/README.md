@@ -6,11 +6,7 @@
 
 --------------------------
 
-**Understanding** : Grasping the idea of einsum is easy if you understand it intuitively. As an example, let's start with a simple description involving *matrix multiplication* which is ubiquitous in deep learning.
-
----------
-
-To use **`numpy.einsum()`**<sup id="numpyeinsum">[3](#fn3)</sup> or **`torch.einsum()`**<sup id="torcheinsumdoc">[1](#fn1)</sup>, all you have to do is to pass the so-called *subscripts string* as an argument, followed by your _input arrays_ (or equivalently tensors in PyTorch).
+**Understanding** : Grasping the idea of einsum is easy if you understand it intuitively. As an example, let's start with a simple description involving *matrix multiplication* which is ubiquitous in deep learning. To use **`numpy.einsum()`**<sup id="numpyeinsum">[3](#fn3)</sup> or **`torch.einsum()`**<sup id="torcheinsumdoc">[1](#fn1)</sup>, all you have to do is to pass the so-called *subscripts string* as an argument, followed by your _input arrays_ (or equivalently tensors in PyTorch).
 
 Let's say you have two 2D arrays, **`A`** and **`B`**, and you want to perform matrix multiplication. So, you do:
 
