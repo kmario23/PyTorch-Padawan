@@ -1,6 +1,8 @@
-#### `Ein`stein `Sum`mation (einsum)
+### `Ein`stein `Sum`mation (einsum)
 
-**Intro** : Since the description of einsum is skimpy in torch documentation<sup id="torcheinsumdoc">[1](#fn1)</sup>, we will first understand [**`numpy.einsum()`**][3] based on the semantics of which **`torch.einsum()`**<sup id="torcheinsum">[2](#fn2)</sup>  is implemented. Then, we will compare and contrast how **`torch.einsum()`**<sup id="torcheinsum">[2](#fn2)</sup>  behaves when compared to [`numpy.einsum()`][3].
+----------------
+
+**Intro** : Since the description of einsum is skimpy in torch documentation<sup id="torcheinsumdoc">[1](#fn1)</sup>, we will first understand **`numpy.einsum()`**<sup id="numpyeinsum">[3](#fn3)</sup> based on the semantics of which **`torch.einsum()`**<sup id="torcheinsum">[2](#fn2)</sup>  is implemented. Then, we will compare and contrast how **`torch.einsum()`**<sup id="torcheinsumdoc">[1](#fn1)</sup>  behaves when compared to `numpy.einsum()`<sup id="numpyeinsum">[3](#fn3)</sup> .
 
 --------------------------
 
@@ -8,7 +10,7 @@
 
 ---------
 
-To use [**`numpy.einsum()`**][3] or **`torch.einsum()`**<sup id="torcheinsum">[2](#fn2)</sup> , all you have to do is to pass the so-called *subscripts string* as an argument, followed by your _input arrays_ (or equivalently tensors in PyTorch).
+To use **`numpy.einsum()`**<sup id="numpyeinsum">[3](#fn3)</sup> or **`torch.einsum()`**<sup id="torcheinsumdoc">[1](#fn1)</sup>, all you have to do is to pass the so-called *subscripts string* as an argument, followed by your _input arrays_ (or equivalently tensors in PyTorch).
 
 Let's say you have two 2D arrays, **`A`** and **`B`**, and you want to perform matrix multiplication. So, you do:
 
@@ -21,7 +23,7 @@ In the above lines of code, the first part of the *subscript string* **`ij`** co
 
 The *subscript string* after this **`->`**, corresponds to the resultant array/tensor. If you leave it empty, then everything will be summed and a single scalar value is returned as the result. Else the resultant array will have dimensions according to the *subscript string*. In our example, it'll be **`ik`**. This is intuitive because we know that for matrix multiplication the constraint is that the number of columns in array **`A`** has to match the number of rows in array **`B`** , which is what is happening here (i.e., we encode this knowledge by repeating the char **`j`** in the *subscript string*).
 
-**Differences** :
+**Differences between `torch.einsum` and `numpy.einsum`**  :
 
   - NumPy allows both small case and capitalized letters `[a-zA-Z]` for the "*subscript string*" whereas PyTorch allows only small case letters `[a-z]`.
 
@@ -35,9 +37,10 @@ Now that we have an understanding of how to frame the *subscript strings* for th
 
 ---------------------------------
 
-<b id="fn1">1. https://pytorch.org/docs/stable/generated/torch.einsum.html  </b> [:arrow_heading_up:](#torcheinsum) 
+<b id="fn1">1. https://pytorch.org/docs/stable/generated/torch.einsum.html  </b> [:arrow_heading_up:](#torcheinsumdoc) 
 
 <b id="fn2">2. https://pytorch.org/docs/stable/_modules/torch/functional.html#einsum </b> [:arrow_heading_up:](#torcheinsum) 
 
-[3]: https://numpy.org/devdocs/reference/generated/numpy.einsum.html
-[4]: https://en.wikipedia.org/wiki/Frobenius_inner_product
+<b id="fn3">3. https://numpy.org/devdocs/reference/generated/numpy.einsum.html </b> [:arrow_heading_up:](#numpyeinsum) 
+
+<b id="fn4">4. https://en.wikipedia.org/wiki/Frobenius_inner_product </b> [:arrow_heading_up:](#frobeniusip) 
