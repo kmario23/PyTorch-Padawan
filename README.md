@@ -3,7 +3,7 @@
 </p>
 
 <h3><p align="center">PyTorch Padawan</p></h3>
-The grand goal of this repository is to offer an in-depth understanding of  **PyTorch for scientific computing** . In particular, we will focus mainly on solving problems while also explaining the steps involved which will then offer good intuitions and confidence for working with arbitrary tensors.
+The grand goal of this repository is to offer an in-depth understanding of **PyTorch for Scientific Computing**. In particular, we will focus mainly on solving problems while also explaining the steps involved which will then offer good intuitions and confidence for working with tensors of arbitrary shapes.
 
 --------
 
